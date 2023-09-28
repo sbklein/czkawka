@@ -27,6 +27,14 @@ sudo xbps-install gcc pkg-config ffmpeg
 ```
 
 ### macOS
+The easiest way to install for both x86_64 and Apple Silicon will be through Homebrew:
+```shell
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install czkawka
+```
+This will install both czkawka_cli and czkawka_gui
+
+If you do not want to use Homebrew:
 Currently, you need to manually install `GTK 4` libraries, `FFmpeg` and the Adwaita theme, because they are dynamically loaded from the OS.  
 One very straight-forward way to do this is by using [Homebrew](https://brew.sh/).  
 Installation in the terminal:
